@@ -1,0 +1,59 @@
+@import "../globals.scss";
+
+nav {
+    @apply bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 z-50;
+    color: $color-primary;
+
+    div {
+        div {
+            span {
+                @apply font-bold text-2xl;
+            }
+            ul {
+                @apply flex flex-row justify-between items-center gap-5;
+
+                li {
+                    a {
+                        @apply text-gray-300 hover:text-blue-500 font-normal;
+                    }
+                }
+
+                @media (max-width: 640px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+nav > div {
+    @apply container mx-auto flex flex-row justify-between items-center gap-2;
+}
+
+.btn__part {
+    @apply flex gap-5 flex-row justify-end items-center;
+}
+
+.menu {
+    display: none;
+
+    @media (max-width: 640px) {
+        @apply flex text-2xl;
+    }
+}
+
+.mobileMenu {
+    @apply absolute w-full;
+
+    ul {
+        @apply px-2 pb-3 flex flex-col justify-start items-start gap-2;
+
+        li {
+            @apply py-2 border-t border-gray-600 w-full;
+
+            a {
+                @apply text-gray-300 font-normal;
+            }
+        }
+    }
+}

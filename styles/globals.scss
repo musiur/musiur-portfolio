@@ -1,0 +1,15 @@
+@import "./partials/variables";
+
+// .container {
+//     @apply px-10;
+// }
+
+.btn {
+    @apply px-5 py-2 rounded-lg;
+}
+
+.btn__primary {
+    @extend .btn;
+
+    @apply border-gray-200 bg-blue-600 text-white;
+}
