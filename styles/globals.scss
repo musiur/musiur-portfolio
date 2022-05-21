@@ -5,11 +5,11 @@
 // }
 
 .btn {
-    @apply px-5 py-2 rounded-lg;
+    @apply px-5 py-2 rounded-lg ease-in-out duration-300;
 }
 
 .btn__primary {
     @extend .btn;
 
-    @apply border-gray-200 bg-blue-600 text-white;
+    @apply border-gray-200 bg-blue-600 text-white hover:bg-blue-700;
 }
