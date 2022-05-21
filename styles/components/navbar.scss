@@ -1,7 +1,7 @@
 @import "../globals.scss";
 
 nav {
-    @apply bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 z-50;
+    @apply bg-gray-800 border-gray-200 px-2 sm:px-4 py-2.5 z-50;
     color: $color-primary;
 
     div {
