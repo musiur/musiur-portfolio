@@ -3,12 +3,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useState } from "react";
 
+const ResumeLink =
+  "https://docs.google.com/document/d/1Iaqhcmd-wYYDcdedQgeOOG5DJAtSmfX6ZqDjskccsk0/edit?usp=sharing";
 const iconDimention = "w-7 h-7";
 
 const BarMenu = <FontAwesomeIcon icon={faBars} className={iconDimention} />;
 const TimesMenu = <FontAwesomeIcon icon={faTimes} className={iconDimention} />;
 
-const navlinks = ["Projects", "Blog", "About", "Contact"];
+const navlinks = [
+  {
+    name: "Projects",
+    link: "/projects",
+  },
+  {
+    name: "Blog",
+    link: "/blog",
+  },
+  {
+    name: "About",
+    link: "/about",
+  },
+  {
+    name: "Contact",
+    link: "/contact",
+  },
+];
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const handleMenu = () => {
@@ -18,14 +37,16 @@ const Navbar = () => {
     <>
       <nav>
         <div>
-          <div>
+          <Link href="/">
             <span>musiur</span>
-          </div>
+          </Link>
           <div>
             <ULlist />
           </div>
           <div className="btn__part">
-            <button className="btn__primary">Get Resume</button>
+            <a target="_blank" href={ResumeLink} rel="noopener noreferrer">
+              <button className="btn__primary">Get Resume</button>
+            </a>
             <button onClick={handleMenu} className="menu">
               {openMenu ? TimesMenu : BarMenu}
             </button>
@@ -52,10 +73,11 @@ export default Navbar;
 const ULlist = () => {
   return (
     <ul>
-      {navlinks.map((link, i) => {
+      {navlinks.map((linkData, i) => {
+        const { link, name } = linkData;
         return (
           <li key={i}>
-            <Link href="/">{link}</Link>
+            <Link href={link}>{name}</Link>
           </li>
         );
       })}
