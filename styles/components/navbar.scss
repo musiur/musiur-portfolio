@@ -1,11 +1,10 @@
 @import "../globals.scss";
 
 nav {
-    @apply bg-gray-800 border-gray-200 px-2 sm:px-4 py-2.5 z-50;
-    color: $color-primary;
+    @apply bg-bg-dark border-gray-200 px-2 sm:px-4 py-2.5  text-white;
 
     span {
-        @apply font-bold text-2xl cursor-pointer;
+        @apply font-bold text-3xl cursor-pointer;
     }
 
     div {
@@ -15,7 +14,7 @@ nav {
 
                 li {
                     a {
-                        @apply text-gray-300 hover:text-blue-500 font-normal;
+                        @apply text-gray-300 hover:text-blue-500 font-semibold;
                     }
                 }
 

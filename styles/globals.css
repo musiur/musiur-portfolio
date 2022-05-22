@@ -6,9 +6,9 @@
 
 * {
   font-family: "Inter", sans-serif;
-  @apply m-0 p-0 box-border;
+  @apply m-0 p-0 box-border ease-in-out duration-300;
 }
 
 a {
-  @apply text-blue-600 font-bold;
+  @apply text-blue-600 font-semibold;
 }

@@ -1,0 +1,53 @@
+@import "../globals.scss";
+
+.homeHero {
+    @extend .section;
+    @apply bg-bg-dark text-center;
+
+    div {
+        @apply container mx-auto;
+
+        h1 {
+            @extend .heading1;
+            @apply pb-10;
+        }
+
+        p {
+            @apply w-full lg:w-1/2 mx-auto px-5 text-gray-400 font-semibold pb-10;
+        }
+    }
+}
+
+.hh__btn__container {
+    @apply flex flex-row justify-center items-center gap-5 pt-10;
+}
+
+// technologies
+.technologies {
+    @apply bg-bg-dark text-center;
+
+    div {
+        @extend .section;
+        @apply container mx-auto;
+
+        h2 {
+            @extend .heading2;
+            @apply pb-10;
+        }
+
+        p {
+            @apply w-full lg:w-1/2 mx-auto px-5 text-gray-400 font-semibold pb-10;
+        }
+
+        ul {
+            @apply flex flex-wrap flex-row justify-center items-center gap-5 bg-gray-100 p-5 lg:p-10 rounded-xl py-10 mt-10;
+
+            li {
+                img {
+                    @apply grayscale hover:grayscale-0 relative;
+                    z-index: 0 !important;
+                }
+            }
+        }
+    }
+}

@@ -34,7 +34,7 @@ const Navbar = () => {
     setOpenMenu(!openMenu);
   };
   return (
-    <>
+    <div className="fixed w-full top-0">
       <nav>
         <div>
           <Link href="/">
@@ -56,7 +56,7 @@ const Navbar = () => {
 
       {/* mobile navbar  */}
       <div
-        className={`z-10 bg-gray-800 text-white ${
+        className={`z-10 bg-bg-dark text-white ${
           openMenu
             ? "-translate-y-0 opacity-100 h-auto"
             : "-translate-y-full opacity-0 h-0"
@@ -64,7 +64,7 @@ const Navbar = () => {
       >
         <ULlist />
       </div>
-    </>
+    </div>
   );
 };
 
