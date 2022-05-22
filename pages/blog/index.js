@@ -1,6 +1,6 @@
 const Blogs = () => {
     return (
-        <div>Blog</div>
+        <div className="blogs__container">Blog</div>
     )
 }
 

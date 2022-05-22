@@ -3,7 +3,7 @@ const Project = () => {
     const router = useRouter();
     const slug = router.query.project;
     return (
-        <div>{slug}</div>
+        <div className="project__container">{slug}</div>
     )
 }
 
