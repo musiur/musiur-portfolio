@@ -5,7 +5,7 @@
 }
 
 .pc__container > div {
-    @apply w-full h-1/2;
+    @apply w-full h-auto;
 
     img {
         @apply rounded-t-lg grayscale ease-in-out duration-500;
