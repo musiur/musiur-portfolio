@@ -9,7 +9,7 @@
 
         h1 {
             @extend .heading1;
-            @apply pb-10;
+            @apply w-11/12 lg:w-2/3 mx-auto text-center pb-10;
         }
 
         p {

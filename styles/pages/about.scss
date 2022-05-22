@@ -1,0 +1,47 @@
+@import "../globals.scss";
+
+.about__container {
+    background-image: linear-gradient(to left, #111827 60%, #11182700), url("/static/about/musiur.jpeg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: contain;
+
+    @media (max-width: 1200px) {
+        background-image: linear-gradient(to top, #111827 30%, #11182769), url("/static/about/musiur.jpeg");
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-position-x: top;
+        background-size: cover;
+    }
+}
+
+.about__container > div {
+    @apply container mx-auto flex flex-row justify-between items-center gap-5;
+
+    @media (max-width: 1200px) {
+        @apply flex-col p-2;
+    }
+}
+
+.ac__picture {
+    flex: 0.5;
+}
+
+.ac__description {
+    flex: 0.5;
+
+    @extend .section;
+    @apply text-left text-white;
+
+    h1 {
+        @extend .heading1;
+    }
+    h3 {
+        @extend .heading3;
+        @apply py-10;
+    }
+    p {
+        @apply font-normal pb-5;
+    }
+}
