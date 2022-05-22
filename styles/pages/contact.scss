@@ -1,1 +1,21 @@
 @import "../globals.scss";
+
+.contact__container {
+    @extend .section;
+    @apply bg-bg-dark;
+
+    min-height: 100vh;
+}
+
+.contact__container > div {
+    @extend .section;
+    @apply container mx-auto;
+
+    h3 {
+        @extend .heading2;
+    }
+}
+
+.cc__form {
+    @apply w-full lg:w-2/3 2xl:w-3/5 p-2 lg:p-5 mx-auto;
+}
