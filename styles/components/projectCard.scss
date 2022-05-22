@@ -1,0 +1,38 @@
+@import "../globals.scss";
+
+.pc__container {
+    @apply w-full h-full rounded-lg border shadow-xl bg-gray-800 hover:bg-gray-900 border-gray-700;
+}
+
+.pc__container > div {
+    @apply w-full h-1/2;
+
+    img {
+        @apply rounded-t-lg grayscale ease-in-out duration-500;
+    }
+}
+
+.pc__container:hover > div {
+    img {
+        @apply grayscale-0;
+    }
+}
+
+.pcc__body {
+    @apply p-5 flex rounded-lg flex-col justify-between items-center;
+
+    h3 {
+        @extend .heading3;
+        @apply pb-5;
+    }
+
+    p {
+        @extend .para1;
+        width: 100% !important;
+    }
+
+    button {
+        @extend .btn__primary;
+        @apply mx-auto;
+    }
+}

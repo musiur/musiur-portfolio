@@ -13,7 +13,8 @@
         }
 
         p {
-            @apply w-full lg:w-1/2 mx-auto px-5 text-gray-400 font-semibold pb-10;
+            @extend .para1;
+            @apply pb-10;
         }
     }
 }
@@ -36,7 +37,9 @@
         }
 
         p {
-            @apply w-full lg:w-1/2 mx-auto px-5 text-gray-400 font-semibold pb-10;
+            @extend .para1;
+
+            @apply pb-10;
         }
 
         ul {
@@ -50,4 +53,28 @@
             }
         }
     }
+}
+
+// working projects
+.workingProjects {
+    @apply bg-bg-dark text-center;
+}
+
+.workingProjects > div {
+    @extend .section;
+    @apply container mx-auto;
+
+    h2 {
+        @extend .heading2;
+        @apply pb-10;
+    }
+
+    p {
+        @extend .para1;
+        @apply pb-10;
+    }
+}
+
+.wp__projects_container {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 py-10 m-2;
 }

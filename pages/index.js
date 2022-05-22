@@ -2,6 +2,7 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectCard from "../components/ProjectCard";
 const iconDimention = "w-4 h-4";
 const ArrowRightLong = (
   <FontAwesomeIcon icon={faArrowRightLong} className={iconDimention} />
@@ -18,6 +19,27 @@ const ImportAll = (r) => {
 const TechImages = ImportAll(
   require.context("/static/techIcons", false, /\.(png|jpe?g|svg)$/)
 );
+
+const WorkingProjects = [
+  {
+    title: "ABIAN2018FUND",
+    image: "/static/home/abian2018.png",
+    link: "/projects",
+    description: "This is an organizational project. ABIAN2018FUND originated from school friends to help society without any political and profitible agenda."
+  },
+  {
+    title: "musiur",
+    image: "/static/home/musiur.png",
+    link: "/projects",
+    description: "This is my personal Portfolio site where I will includes latest information about my skills, works and other contribution to the programming communities."
+  },
+  {
+    title: "NSU Origin",
+    image: "/static/home/nsuorigin.png",
+    link: "/projects",
+    description: "NSU Origin is a Group of people from North South University work together to skillup, participate in national and international compitition and enrich technological knowlege within tech anthutistic communities"
+  }
+]
 
 const Home = () => {
   return (
@@ -61,6 +83,24 @@ const Home = () => {
               );
             })}
           </ul>
+        </div>
+      </section>
+      {/* projects I'am working on  */}
+      <section className="workingProjects">
+        <div>
+          <h2>Currently Working On</h2>
+          <p>These are my current working projects. You can expore my other works which includes personal, opensource and industrial projects</p>
+          <button className="btn__secondary mx-auto">Explore more projects <span>{ArrowRightLong}</span></button>
+
+          <div className="wp__projects_container">
+            {
+              WorkingProjects.map((projectData, i) => {
+                return (
+                  <ProjectCard props={projectData} key={i}/>
+                )
+              })
+            }
+          </div>
         </div>
       </section>
     </>
