@@ -25,21 +25,24 @@ const WorkingProjects = [
     title: "ABIAN2018FUND",
     image: "/static/home/abian2018.png",
     link: "/projects",
-    description: "This is an organizational project. ABIAN2018FUND originated from school friends to help society without any political and profitible agenda."
+    description:
+      "This is an organizational project. ABIAN2018FUND originated from school friends to help society without any political and profitible agenda.",
   },
   {
     title: "musiur",
     image: "/static/home/musiur.png",
     link: "/projects",
-    description: "This is my personal Portfolio site where I will includes latest information about my skills, works and other contribution to the programming communities."
+    description:
+      "This is my personal Portfolio site where I will includes latest information about my skills, works and other contribution to the programming communities.",
   },
   {
     title: "NSU Origin",
     image: "/static/home/nsuorigin.png",
     link: "/projects",
-    description: "NSU Origin is a Group of people from North South University work together to skillup, participate in national and international compitition and enrich technological knowlege within tech anthutistic communities"
-  }
-]
+    description:
+      "NSU Origin is a Group of people from North South University work together to skillup, participate in national and international compitition and enrich technological knowlege within tech anthutistic communities",
+  },
+];
 
 const Home = () => {
   return (
@@ -71,7 +74,9 @@ const Home = () => {
         <div>
           <h2>Technologies I Use Most</h2>
           <p>
-          There are various technologies I have used based on project requirements. I have chosen the best technologies that I am comfortable most working with
+            There are various technologies I have used based on project
+            requirements. I have chosen the best technologies that I am
+            comfortable most working with
           </p>
           <ul>
             {Object.values(TechImages).map((imageData, i) => {
@@ -89,17 +94,20 @@ const Home = () => {
       <section className="workingProjects">
         <div>
           <h2>Currently Working On</h2>
-          <p>These are my current working projects. You can expore my other works which includes personal, opensource and industrial projects</p>
-          <button className="btn__secondary mx-auto">Explore more projects <span>{ArrowRightLong}</span></button>
+          <p>
+            These are my current working projects. You can expore my other works
+            which includes personal, opensource and industrial projects
+          </p>
+          <Link href="/projects">
+            <button className="btn__secondary mx-auto">
+              Explore more projects <span>{ArrowRightLong}</span>
+            </button>
+          </Link>
 
           <div className="wp__projects_container">
-            {
-              WorkingProjects.map((projectData, i) => {
-                return (
-                  <ProjectCard props={projectData} key={i}/>
-                )
-              })
-            }
+            {WorkingProjects.map((projectData, i) => {
+              return <ProjectCard props={projectData} key={i} />;
+            })}
           </div>
         </div>
       </section>
