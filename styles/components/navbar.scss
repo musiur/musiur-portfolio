@@ -3,8 +3,11 @@
 nav {
     @apply bg-bg-dark border-b border-gray-600 px-2 sm:px-4 py-2.5  text-white;
 
-    span {
-        @apply font-bold text-3xl cursor-none sm:cursor-pointer;
+    .brand {
+        @apply flex flex-row justify-start items-center gap-2;
+        span {
+            @apply font-bold text-3xl cursor-none sm:cursor-pointer;
+        }
     }
 
     div {

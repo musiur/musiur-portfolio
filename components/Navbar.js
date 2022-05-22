@@ -1,5 +1,6 @@
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -38,7 +39,15 @@ const Navbar = () => {
       <nav>
         <div>
           <Link href="/">
-            <span>musiur</span>
+            <p className="brand">
+              <Image
+                src="/static/logo/musiur1.svg"
+                alt=""
+                width={50}
+                height={50}
+              />
+              <span>musiur</span>
+            </p>
           </Link>
           <div>
             <ULlist />
