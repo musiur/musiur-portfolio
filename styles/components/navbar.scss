@@ -4,7 +4,7 @@ nav {
     @apply bg-bg-dark border-b border-gray-600 px-2 sm:px-4 py-2.5  text-white;
 
     span {
-        @apply font-bold text-3xl cursor-pointer;
+        @apply font-bold text-3xl cursor-none sm:cursor-pointer;
     }
 
     div {
@@ -43,13 +43,13 @@ nav > div {
 }
 
 .mobileMenu {
-    @apply absolute w-full;
+    @apply absolute w-full inline-block sm:hidden bg-bg-dark;
 
     ul {
-        @apply px-2 pb-3 flex flex-col justify-start items-start gap-2;
+        @apply px-2 pb-3 flex flex-col justify-start items-start gap-2 bg-bg-dark;
 
         li {
-            @apply py-2 border-b border-gray-600 w-full;
+            @apply py-2 border-b border-gray-600 w-full bg-bg-dark;
 
             a {
                 @apply text-gray-300 font-normal;

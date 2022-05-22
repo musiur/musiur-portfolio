@@ -47,9 +47,9 @@ const Navbar = () => {
             <a target="_blank" href={ResumeLink} rel="noopener noreferrer">
               <button className="btn__primary">Get Resume</button>
             </a>
-            <button onClick={handleMenu} className="menu">
+            <div onClick={handleMenu} className="menu">
               {openMenu ? TimesMenu : BarMenu}
-            </button>
+            </div>
           </div>
         </div>
       </nav>
@@ -58,8 +58,8 @@ const Navbar = () => {
       <div
         className={`z-10 bg-bg-dark text-white ${
           openMenu
-            ? "-translate-y-0 opacity-100 h-auto"
-            : "-translate-y-full opacity-0 h-0"
+            ? "-translate-y-0 -translate-x-0 opacity-100 h-auto"
+            : "-translate-y-full -translate-x-full opacity-1 h-0"
         } ease-in-out duration-300 mobileMenu`}
       >
         <ULlist />
