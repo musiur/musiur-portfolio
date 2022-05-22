@@ -1,7 +1,7 @@
 @import "../globals.scss";
 
 nav {
-    @apply bg-bg-dark border-gray-200 px-2 sm:px-4 py-2.5  text-white;
+    @apply bg-bg-dark border-b border-gray-600 px-2 sm:px-4 py-2.5  text-white;
 
     span {
         @apply font-bold text-3xl cursor-pointer;
@@ -49,7 +49,7 @@ nav > div {
         @apply px-2 pb-3 flex flex-col justify-start items-start gap-2;
 
         li {
-            @apply py-2 border-t border-gray-600 w-full;
+            @apply py-2 border-b border-gray-600 w-full;
 
             a {
                 @apply text-gray-300 font-normal;
