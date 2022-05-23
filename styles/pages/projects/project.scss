@@ -2,5 +2,89 @@
 
 .project__container {
     min-height: 100vh;
-    @apply bg-bg-dark text-white p-10;
+    @apply bg-bg-dark text-white;
+
+    @extend .section;
+
+    h1 {
+        @extend .heading1;
+    }
+    h2 {
+        @extend .heading3;
+    }
+
+    h3 {
+        @extend .heading3;
+    }
+
+    p,
+    li {
+        @apply text-gray-400 font-semibold;
+    }
+}
+
+.pc__canvas {
+    @apply container mx-auto col-span-9 rounded-lg p-2 lg:p-0;
+
+    @media (max-width: 1024px) {
+        @apply col-span-12;
+    }
+}
+
+.pcc__container {
+    @apply grid grid-cols-12 gap-16;
+}
+
+.pccc__showcase {
+    @apply col-span-8 rounded-md flex flex-col gap-16;
+
+    @media (max-width: 1024px) {
+        @apply col-span-12;
+    }
+    h1 {
+        @apply pb-2 border-b border-gray-600;
+    }
+
+    h3 {
+        @apply pb-5;
+    }
+
+    ul {
+        @apply pb-2;
+        li {
+            @apply flex flex-row items-start gap-2 pb-2;
+        }
+    }
+
+    a {
+        @apply inline-block mt-5;
+    }
+    .pcccs_link {
+        @apply flex flex-row items-center gap-2 bg-blue-800 text-white px-2 py-1 rounded-lg hover:underline font-bold;
+    }
+}
+
+.pccc__suggestion {
+    @apply col-span-4 rounded-md h-full bg-gray-800 p-2 lg:p-5;
+
+    @media (max-width: 1024px) {
+        @apply col-span-12;
+    }
+
+    ul {
+        @apply mt-5;
+
+        li {
+            @apply mb-2 p-2 lg:p-5 rounded-md hover:bg-gray-700 shadow-lg hover:shadow-xl;
+
+            h3 {
+                @extend .heading4;
+                @apply pb-2;
+            }
+
+            p {
+                @apply pb-2;
+            }
+        }
+    }
 }

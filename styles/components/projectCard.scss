@@ -29,6 +29,7 @@
     p {
         @extend .para1;
         width: 100% !important;
+        @apply pb-5;
     }
 
     button {
