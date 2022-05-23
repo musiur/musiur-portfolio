@@ -5,6 +5,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import Carousel from "../../components/Carousel";
+import SkeletonLoader from "../../components/skeletonLoaders/SkeletonLoader";
+import ImagesFromFolder from "../../utils/ImagesFromFolder";
 
 const iconDimention = "w-4 h-4";
 const Crown = <FontAwesomeIcon icon={faCrown} className={iconDimention} />;
@@ -33,6 +36,10 @@ const categories = [
   },
 ];
 
+const Abian2018Images = ImagesFromFolder(
+  require.context("/static/projects/abian2018", false, /\.(png|jpe?g|svg)$/)
+);
+
 const Projects = () => {
   return (
     <div className="projects__container">
@@ -49,7 +56,7 @@ const Projects = () => {
                     <p>{title}</p>
                   </div>
                   <div className="pcsn__badge">
-                    <span>{amount > 10 ? `${amount}+` : amount}</span>
+                    <span>{amount > 10 ? "10+" : amount}</span>
                   </div>
                 </li>
               );
@@ -58,7 +65,10 @@ const Projects = () => {
         </div>
         <div className="pc__canvas">
           <div className="pcc__container">
-            <div className="pccc__showcase">Showcase</div>
+            <div className="pccc__showcase">
+              {/* <SkeletonLoader /> */}
+              <Carousel props={Abian2018Images} />
+            </div>
             <div className="pccc__suggestion">
               <h2>Suggestions</h2>
               <ul>
@@ -71,20 +81,22 @@ const Projects = () => {
                   <Link href="/projects/nsu-origin">Read more</Link>
                 </li>
                 <li>
-                  <h3>NSU Origin</h3>
+                  {/* <h3>NSU Origin</h3>
                   <p>
                     NSU Origin is a group of people whom working on skillup,
                     practice...
                   </p>
-                  <Link href="/projects/nsu-origin">Read more</Link>
+                  <Link href="/projects/nsu-origin">Read more</Link> */}
+                  <SkeletonLoader />
                 </li>
                 <li>
-                  <h3>NSU Origin</h3>
+                  {/* <h3>NSU Origin</h3>
                   <p>
                     NSU Origin is a group of people whom working on skillup,
                     practice...
                   </p>
-                  <Link href="/projects/nsu-origin">Read more</Link>
+                  <Link href="/projects/nsu-origin">Read more</Link> */}
+                  <SkeletonLoader />
                 </li>
               </ul>
             </div>

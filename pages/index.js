@@ -3,20 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import ProjectCard from "../components/ProjectCard";
+import ImagesFromFolder from "../utils/ImagesFromFolder";
 const iconDimention = "w-4 h-4";
 const ArrowRightLong = (
   <FontAwesomeIcon icon={faArrowRightLong} className={iconDimention} />
 );
 
-const ImportAll = (r) => {
-  let images = {};
-  r.keys().map((item) => {
-    images[item.replace("./", "")] = r(item);
-  });
-  return images;
-};
-
-const TechImages = ImportAll(
+const TechImages = ImagesFromFolder(
   require.context("/static/techIcons", false, /\.(png|jpe?g|svg)$/)
 );
 
