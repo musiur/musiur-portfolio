@@ -12,7 +12,7 @@ const Contact = () => {
               type="email"
               id="email"
               className="input__style"
-              placeholder="name@flowbite.com"
+              placeholder="name@gmail.com"
               required
             />
           </div>
@@ -24,6 +24,7 @@ const Contact = () => {
               type="text"
               id="fullname"
               className="input__style"
+              placeholder="John Doe"
               required
             />
           </div>
@@ -31,7 +32,13 @@ const Contact = () => {
             <label htmlFor="message" className="label__style">
               Your Message
             </label>
-            <textarea type="text" id="message" className="input__style h-28" required />
+            <textarea
+              type="text"
+              id="message"
+              className="input__style h-28"
+              placeholder="Write your message here"
+              required
+            />
           </div>
 
           <button type="submit" className="btn__primary mx-auto">

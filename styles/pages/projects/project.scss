@@ -2,29 +2,40 @@
 
 .project__container {
     min-height: 100vh;
-    @apply bg-bg-dark text-white;
-
-    @extend .section;
+    @apply bg-bg-dark text-white py-10;
 
     h1 {
         @extend .heading1;
+        @apply border-b border-gray-600;
     }
     h2 {
         @extend .heading3;
     }
-
     h3 {
-        @extend .heading3;
+        @extend .heading4;
+        @apply pb-2;
     }
-
     p,
     li {
-        @apply text-gray-400 font-semibold;
+        @apply text-gray-400 mb-2 font-semibold;
+    }
+
+    a {
+        @apply inline-block;
+        text-decoration: none;
+    }
+}
+
+.pcccs_link {
+    @apply flex flex-row gap-2 items-center px-2 py-1 rounded-lg bg-primary mt-5;
+    color: white !important;
+    span {
+        @apply text-white font-semibold hover:underline;
     }
 }
 
 .pc__canvas {
-    @apply container mx-auto col-span-9 rounded-lg p-2 lg:p-0;
+    @apply container mx-auto rounded-lg p-2 lg:p-5;
 
     @media (max-width: 1024px) {
         @apply col-span-12;
@@ -32,35 +43,18 @@
 }
 
 .pcc__container {
-    @apply grid grid-cols-12 gap-16;
+    @apply grid grid-cols-12 gap-5;
 }
 
 .pccc__showcase {
-    @apply col-span-8 rounded-md flex flex-col gap-16;
+    @apply col-span-8 p-2 rounded-md flex flex-col gap-16 mb-10;
 
     @media (max-width: 1024px) {
         @apply col-span-12;
     }
-    h1 {
-        @apply pb-2 border-b border-gray-600;
-    }
 
-    h3 {
-        @apply pb-5;
-    }
-
-    ul {
-        @apply pb-2;
-        li {
-            @apply flex flex-row items-start gap-2 pb-2;
-        }
-    }
-
-    a {
-        @apply inline-block mt-5;
-    }
-    .pcccs_link {
-        @apply flex flex-row items-center gap-2 bg-blue-800 text-white px-2 py-1 rounded-lg hover:underline font-bold;
+    li {
+        @apply flex flex-row gap-2 items-start;
     }
 }
 
@@ -75,7 +69,7 @@
         @apply mt-5;
 
         li {
-            @apply mb-2 p-2 lg:p-5 rounded-md hover:bg-gray-700 shadow-lg hover:shadow-xl;
+            @apply mb-2 p-2 rounded-md hover:bg-gray-700 shadow-lg hover:shadow-xl;
 
             h3 {
                 @extend .heading4;
