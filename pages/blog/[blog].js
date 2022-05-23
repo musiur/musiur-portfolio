@@ -3,7 +3,7 @@ const Blog = () => {
     const router = useRouter();
     const slug = router.query.blog;
     return (
-        <div className="blog__container">{slug}</div>
+        <div className="blog__container">{slug} under construction</div>
     )
 }
 
