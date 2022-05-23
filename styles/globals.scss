@@ -32,6 +32,10 @@
     @apply text-xl xl:text-2xl font-bold text-white inline-block mx-auto text-center;
 }
 
+.heading4 {
+    @apply text-base lg:text-lg font-bold text-white inline-block;
+}
+
 .para1 {
     @apply w-full lg:w-1/2 mx-auto px-5 text-gray-400 font-semibold;
 }

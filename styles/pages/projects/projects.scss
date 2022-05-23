@@ -2,5 +2,90 @@
 
 .projects__container {
     min-height: 100vh;
-    @apply bg-bg-dark;
+    @apply bg-bg-dark text-gray-400 p-2 md:p-0;
+
+    h2 {
+        @extend .heading3;
+    }
+}
+
+.projects__container > div {
+    @extend .section;
+    @apply container mx-auto grid grid-cols-12 gap-5;
+}
+
+.pc__side_nav {
+    @apply col-span-3 rounded-lg bg-gray-800 p-2 lg:p-5;
+
+    ul {
+        @apply pt-5;
+
+        li {
+            @apply mb-2 p-2 rounded-md hover:bg-gray-700 hover:text-white cursor-none sm:cursor-pointer flex flex-row justify-between items-center gap-2;
+
+            .pcsn__option {
+                @apply flex flex-row justify-start items-center gap-2;
+            }
+            .pcsn__badge {
+                @apply bg-gray-700 rounded-full h-8 w-8 flex justify-center items-center;
+
+                span {
+                    @apply text-white font-semibold text-sm;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        @apply col-span-12;
+
+        ul {
+            @apply flex flex-row flex-wrap justify-start items-center gap-2;
+        }
+    }
+}
+
+.pc__canvas {
+    @apply col-span-9 rounded-lg bg-gray-800 p-2 lg:p-5;
+
+    @media (max-width: 1024px) {
+        @apply col-span-12;
+    }
+}
+
+.pcc__container {
+    @apply grid grid-cols-12 gap-5;
+}
+
+.pccc__showcase {
+    @apply col-span-8 p-2 rounded-md;
+
+    @media (max-width: 1024px) {
+        @apply col-span-12;
+    }
+}
+
+.pccc__suggestion {
+    @apply col-span-4 rounded-md h-full;
+
+    @media (max-width: 1024px) {
+        @apply col-span-12;
+    }
+
+    ul {
+        @apply mt-5;
+
+        li {
+            @apply mb-2 p-2 rounded-md hover:bg-gray-700 shadow-lg hover:shadow-xl;
+
+            h3 {
+                @extend .heading4;
+                @apply pb-2;
+            }
+
+            p {
+                @apply pb-2;
+            }
+        }
+    }
 }
