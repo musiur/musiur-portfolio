@@ -31,7 +31,7 @@ const Project = () => {
             <div>
               <h1>ABIAN2018FUND</h1>
               <a
-                href="https://abian2018.org"
+                href="https://abian2018.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
