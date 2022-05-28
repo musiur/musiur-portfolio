@@ -14,7 +14,8 @@ const About = () => {
               className="font-semibold"
             >
               Github
-            </a> {" "}||{" "}
+            </a>{" "}
+            ||{" "}
             <a
               href="https://leetcode.com/MusiurAlam/"
               target="_blank"
@@ -22,8 +23,8 @@ const About = () => {
               className="font-semibold"
             >
               LeetCode
-            </a>
-            {" "}||{" "}
+            </a>{" "}
+            ||{" "}
             <a
               href="https://www.linkedin.com/in/musiuropu/"
               target="_blank"
@@ -40,10 +41,17 @@ const About = () => {
             experience as frontend lead (Javascript Developer).
           </p>
           <p>
-            Technologies I use JS (ES6), React, Next JS, Gatsby, Svelte, Redux,
-            Tailwind CSS, SASS/SCSS, Restful APIs and Integration, Yarn and npm,
-            Git & Github, Figma, Illustrator, HTML5, CSS3 , Bootstrap, Node JS,
-            Express JS, MongoDB, Jira etc.
+            Technologies I use <span>JS (ES6)</span>
+            <span> React</span>
+            <span>Next JS</span>
+            <span> Gatsby</span>Svelte
+            <span>Tailwind CSS</span>
+            <span>SASS/SCSS</span>
+            <span>Restful APIs and Integration</span>
+            <span>Redux</span>
+            <span>{"Git & Github"}</span>
+            Yarn and npm, , Figma, Illustrator, HTML5,
+            CSS3 , Bootstrap, Node JS, Express JS, MongoDB, Jira etc.
           </p>
           <p>
             Understanding of design fundamentals, project management and problem

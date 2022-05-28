@@ -42,6 +42,13 @@
         @apply py-10;
     }
     p {
-        @apply font-normal pb-5;
+        @apply font-normal pb-5 leading-relaxed;
+    }
+
+    span {
+        padding: 2px 5px;
+        background-color: #13233a;
+        margin: 0 1px;
+        @apply text-blue-500 rounded-lg font-semibold;
     }
 }
