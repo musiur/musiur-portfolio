@@ -55,6 +55,48 @@ const WorkingProjects = [
     description:
       "NSU Origin is a Group of people from North South University work together to skillup, participate in national and international compitition and enrich technological knowlege within tech anthutistic communities",
   },
+  {
+    title: "ABIAN2018FUND",
+    image: "/static/home/abian2018.png",
+    link: "/projects/abian2018",
+    description:
+      "This is an organizational project. ABIAN2018FUND originated from school friends to help society without any political and profitible agenda.",
+  },
+  {
+    title: "musiur",
+    image: "/static/home/musiur.png",
+    link: "/projects/musiur",
+    description:
+      "This is my personal Portfolio site where I will includes latest information about my skills, works and other contribution to the programming communities.",
+  },
+  {
+    title: "NSU Origin",
+    image: "/static/home/nsuorigin.png",
+    link: "/projects/nsu-origin",
+    description:
+      "NSU Origin is a Group of people from North South University work together to skillup, participate in national and international compitition and enrich technological knowlege within tech anthutistic communities",
+  },
+  {
+    title: "ABIAN2018FUND",
+    image: "/static/home/abian2018.png",
+    link: "/projects/abian2018",
+    description:
+      "This is an organizational project. ABIAN2018FUND originated from school friends to help society without any political and profitible agenda.",
+  },
+  {
+    title: "musiur",
+    image: "/static/home/musiur.png",
+    link: "/projects/musiur",
+    description:
+      "This is my personal Portfolio site where I will includes latest information about my skills, works and other contribution to the programming communities.",
+  },
+  {
+    title: "NSU Origin",
+    image: "/static/home/nsuorigin.png",
+    link: "/projects/nsu-origin",
+    description:
+      "NSU Origin is a Group of people from North South University work together to skillup, participate in national and international compitition and enrich technological knowlege within tech anthutistic communities",
+  },
 ];
 
 const Projects = () => {
