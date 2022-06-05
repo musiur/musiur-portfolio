@@ -69,7 +69,7 @@ const About = () => {
           <p>
             BSc in Computer Science and Engineer <br />
             North South University, Dhaka, Bangladesh <br />
-            {"1 Jan, '20 - 1 Jan, '25 (Expected)"}
+            {"1 Jan, '20 - 1 Jan, '24 (Expected)"}
           </p>
         </div>
       </div>

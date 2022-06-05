@@ -43,7 +43,7 @@ const Home = () => {
       {/* hero section  */}
       <section className="homeHero">
         <div>
-          <h1>Welcome! This is Musiur Alam Opu a Software Engineer</h1>
+          <h1 className="pt-16">Welcome! This is Musiur Alam Opu a Software Engineer</h1>
           <p>
             As a Software Engineer with an eye for design and user experience, I
             craft quality software from front to back - every aspect considered.
