@@ -8,7 +8,7 @@ const About = () => {
           <p>
             Software Engineer ||{" "}
             <a
-              href="https://github.com/MusiurAlam"
+              href="https://github.com/musiur"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold"
